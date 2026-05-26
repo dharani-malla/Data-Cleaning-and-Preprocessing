@@ -28,7 +28,7 @@ df['Age'] = df['Age'].fillna(df['Age'].mean())
 # Fill Embarked with mode
 df['Embarked'] = df['Embarked'].fillna(df['Embarked'].mode()[0])
 
-# Cabin has too many missing values, so remove it
+# Cabin has too many missing values remove the column
 df = df.drop('Cabin', axis=1)
 
 print("\nMissing values after cleaning:")
